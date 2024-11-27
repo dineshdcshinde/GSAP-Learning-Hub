@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+}
+
+.hero nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1% 2%;
+  cursor: pointer;
+  width: 100%;
+  background-color: #0056d6;
+}
+
+nav .logo {
+  font-size: 3.8rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+nav .nav-items ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.2rem;
+}
+
+.nav-items ul li {
+  list-style: none;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  position: relative;
+}
+
+.nav-items ul li::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border-radius: 25px;
+  height: 4px;
+  width: 0;
+  transition: width 0.4s ease;
+}
+
+.nav-items ul li:hover::before {
+  width: 100%;
+}
+
+.hero-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 2%;
+  z-index: 111;
+  padding-top: 2%;
+  color: #222831;
+  background-color: #f4f7fc;
+}
+
+.hero-info {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.hero-info h2 {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  letter-spacing: 2px;
+}
+
+.hero-info p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+.hero-info button {
+  align-self: center;
+  padding: 15px 30px;
+  border: none;
+  font-size: 1.5rem;
+  outline: none;
+  border-radius: 0.3rem;
+  background-color: #0056d6;
+  color: #f4f7fc;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #003a9b;
+  cursor: pointer;
+}
+
+.hero-img {
+  height: 80%;
+  width: 50%;
+}
+
+.hero-img img {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.9%;
+}
