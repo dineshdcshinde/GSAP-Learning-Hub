@@ -40,18 +40,30 @@ gsap.from(".courses-head h2", {
     start: "top 70%",
     scrub: 2,
     end: "top 40%",
-    markers: true,
   },
 });
 
-gsap.from(".courses-head #courses-head-sub", {
+gsap.from(".courses-head p ", {
+  y: 100,
+  opacity: 0,
   scrollTrigger: {
-    y: 100,
-    opacity: 0,
     trigger: ".courses-head",
-    start: "top 30%",
+    start: "top 70%",
     scrub: 2,
-    end: "top 60%",
-    markers: true,
+    end: "top 40%",
+  },
+});
+
+gsap.from(".courses-container .card", {
+  opacity: 0,
+  y: 100,
+  stagger: 0.3,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".card",
+    scroller: "body",
+    start: "top 80%",
+    end: "top 50%",
+    scrub: 2,
   },
 });
