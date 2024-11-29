@@ -1,0 +1,20 @@
+/* Styles for mobile */
+@media (max-width: 480px) {
+    nav{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+    }
+
+    nav .log{
+        font-size: 0.2rem;
+        align-self: center;
+        font-size: 10px;
+    }
+
+    nav .nav-items{
+        display: none;
+    }
+  }
+  
