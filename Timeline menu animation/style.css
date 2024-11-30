@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Bokor&family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Wet+Paint&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+  background-color: #2a2a2a;
+
+  background-image: url("https://cdn.pixabay.com/photo/2024/05/02/09/16/web-development-8734249_1280.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: flex-end; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+nav h1 {
+  font-size: 2.5rem;
+  font-family: "Rubik Wet Paint", serif;
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+
+nav i {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.nav-slider {
+  height: 100%;
+  width: 30%;
+  color: #000;
+  background-color: rgba(255, 255, 2555, 0.1);
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.nav-slider h4 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 0.8rem;
+}
+
+.nav-slider i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 1.5rem;
+  margin-top: 0.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 1%;
+}
+
+.nav-slider i:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.2);
+}
