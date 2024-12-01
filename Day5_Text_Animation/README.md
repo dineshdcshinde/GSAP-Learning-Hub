@@ -24,3 +24,9 @@ This project showcases a **dynamic text animation effect** using **GSAP (GreenSo
 4. **GSAP**: Powers the smooth and professional animations.
 
 ---
+
+### 🤓 What I Learned
+
+1. **DOM Manipulation**: Splitting text dynamically and adding elements.
+2. **GSAP Animations**: Creating smooth and versatile animations.
+3. **Interactive Design**: Enhancing user engagement with hover effects.
