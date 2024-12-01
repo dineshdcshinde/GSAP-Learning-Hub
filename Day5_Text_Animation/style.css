@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: #2a2a2a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper h1 {
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: red; */
+  padding: 2rem;
+  letter-spacing: 2px;
+}
+.wrapper h1 span {
+  font-size: 3rem;
+  display: inline-block;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  padding: 2px;
+}
