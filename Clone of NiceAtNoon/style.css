@@ -1,0 +1,141 @@
+@font-face {
+  font-family: Apercu;
+  src: url(./64eda5e5fdd71ddd3dbbf609_apercu-regular.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* .wrapper{
+   
+} */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+  padding: 2vh 4vh;
+  position: fixed;
+  width: 100%;
+  background-color: #e4e4e4;
+}
+
+nav svg:nth-child(2) {
+  align-self: center;
+  margin-left: 9vw;
+  animation: rotate 3s infinite linear;
+}
+
+nav .nav-items a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: 7px 15px;
+  border: 1px solid black;
+  border-radius: 8px;
+  color: #0a0b0c;
+  font-family: Apercu;
+  margin: 0.2rem;
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+nav .nav-items a:hover {
+  background-color: #0a0b0c;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* hero section */
+.hero {
+  padding: 2vh 4vh;
+  padding-top: 7rem;
+  background-color: #e4e4e4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero h1 {
+  font-family: larken, sans-serif;
+  font-size: 5.5rem;
+  line-height: 1;
+}
+
+.hero h1 span svg {
+  height: 60px;
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.subheading-hero {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.subheading-hero p {
+  font-size: 1.375rem;
+  font-family: Apercu;
+  text-align: center;
+}
+
+.subheading-hero button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 7px 15px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  cursor: pointer;
+  
+}
+
+.subheading-hero button a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #0a0b0c;
+  position: relative;
+  /* transition: width 0.3s ease; */
+}
+
+.subheading-hero button a::before {
+    content: "";
+  position: absolute;
+  top:100%;
+  background-color: rgb(36, 33, 33);
+  height: 2px;
+  transition: width 0.3s linear;
+}
+
+.subheading-hero a:hover::before{
+    width: 100%;
+}
+
+.subheading-hero button svg {
+  width: 20px;
+  height: 30px;
+  margin-left: 1rem;
+  color: #0a0b0c;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
