@@ -60,3 +60,20 @@ gsap.from(".para-container p", {
     scrub: 3,
   },
 });
+
+let body = document.querySelector("body");
+let navBar = document.querySelector("nav");
+
+body.addEventListener("wheel", (dets) => {
+  if (dets.deltaY > 0) {
+    gsap.from(navBar, {
+      opacity: 0,
+    });
+  } else {
+    gsap.from(navBar, {
+      opacity: 1,
+      duration: 0.2,
+      ease: "power1.in",
+    });
+  }
+});

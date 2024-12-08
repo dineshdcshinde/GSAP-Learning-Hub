@@ -739,6 +739,130 @@ nav .nav-items a:hover {
   border-bottom: 1px solid black;
 }
 
+.stuff-container {
+  display: flex;
+  align-items: stretch;
+  gap: 3rem;
+}
+
+.stuff-item {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.stuff-container .stuff-item > span {
+  font-size: 1.5rem;
+  font-family: Apercu;
+  color: #5a5a5a;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.get-in-toch-belief {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.get-in-toch-belief img {
+  cursor: pointer;
+  animation: rotate 6s infinite linear;
+  transition: scale 0.4s ease;
+}
+
+.get-in-toch-belief img:hover {
+  scale: 1.05;
+}
+
+/* Footer */
+footer {
+  background-color: #0a0b0c;
+  padding: 2vh 0;
+  /* padding-left: 9vw; */
+}
+
+.foot-head {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 9vw;
+}
+
+.foot-first h3 {
+  font-size: 2.2rem;
+  font-family: Apercu;
+  font-weight: 600;
+  color: #fff;
+  margin: 0.7rem;
+}
+
+.foot-first button {
+  padding: 0.8rem 2rem;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 0.7rem;
+  transition: border-radius 0.4s ease;
+}
+
+.foot-first button i {
+  margin-left: 0.5rem;
+}
+
+.foot-first button:hover {
+  border-radius: 5rem;
+}
+
+.foot-second {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 40vw;
+}
+
+.foot-item {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.foot-item h4 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: Apercu;
+  margin-bottom: 0.5rem;
+}
+
+.foot-item a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Apercu;
+  margin-bottom: 0.3rem;
+  transition: text-decoration 0.3s ease;
+}
+
+.foot-item a:hover {
+  text-decoration: underline;
+}
+
+#foot-img {
+  padding: 0 !important;
+  height: 50vh;
+  width: 100%;
+}
+
+#foot-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
