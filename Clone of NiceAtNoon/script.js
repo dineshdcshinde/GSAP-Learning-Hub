@@ -61,19 +61,115 @@ gsap.from(".para-container p", {
   },
 });
 
-let body = document.querySelector("body");
-let navBar = document.querySelector("nav");
+let navBarAnimation = () => {
+  let body = document.querySelector("body");
+  let navBar = document.querySelector("nav");
 
-body.addEventListener("wheel", (dets) => {
-  if (dets.deltaY > 0) {
-    gsap.from(navBar, {
-      opacity: 0,
-    });
-  } else {
-    gsap.from(navBar, {
-      opacity: 1,
-      duration: 0.2,
-      ease: "power1.in",
-    });
-  }
-});
+  body.addEventListener("wheel", (dets) => {
+    if (dets.deltaY > 0) {
+      gsap.from(navBar, {
+        opacity: 0,
+      });
+    } else {
+      gsap.from(navBar, {
+        opacity: 1,
+        duration: 0.2,
+        ease: "power1.in",
+      });
+    }
+  });
+};
+
+let casesSec = () => {
+  gsap.from(".cases-head", {
+    opacity: 0,
+    y: 100,
+    scrollTrigger: {
+      trigger: ".cases-head",
+      scroller: ".wrapper",
+      start: "top 50%",
+      end: "top 20%",
+      scrub: 2,
+    },
+  });
+};
+
+let coolCreationAnimation = () => {
+  let tl = gsap.timeline();
+
+  tl.from(".cool-creation", {
+    opacity: 0,
+    x: -100,
+    scrollTrigger: {
+      trigger: ".cool-creation",
+      scroller: ".wrapper",
+      start: "top 50%",
+      end: "top 20%",
+      scrub: 2,
+    },
+  });
+
+  tl.from(".dont-mind", {
+    opacity: 0,
+    x: 100,
+    scrollTrigger: {
+      trigger: ".dont-mind",
+      scroller: ".wrapper",
+      start: "top 50%",
+      end: "top 20%",
+      scrub: 2,
+    },
+  });
+};
+
+let servicesSecAnimation = () => {
+  gsap.from(".services-container div", {
+    x: -100,
+    opacity: 0,
+    duration: 0.1,
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: ".services-container",
+      scroller: ".wrapper",
+      start: "top 50%",
+      end: "top 30%",
+      scrub: 2,
+    },
+  });
+
+  gsap.from(".services .nicandAtNOOn p", {
+    y: 100,
+    opacity: 0,
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: ".nicandAtNOOn",
+      scroller: ".wrapper",
+      start: "top 60%",
+      end: "top 20%",
+      scrub: 2,
+    },
+  });
+};
+
+let beliefSecAnimation = () => {
+  let beliefHead = document.querySelector(".belief-head");
+  console.log(beliefHead);
+
+  gsap.from(beliefHead, {
+    opacity: 0,
+    y: 100,
+    scrollTrigger: {
+      trigger: beliefHead,
+      scroller: ".wrapper",
+      start: "top 50%",
+      end: "top 20%",
+      scrub: 2,
+    },
+  });
+};
+
+navBarAnimation();
+coolCreationAnimation();
+servicesSecAnimation();
+beliefSecAnimation();
+casesSec();

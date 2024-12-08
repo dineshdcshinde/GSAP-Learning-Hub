@@ -666,6 +666,7 @@ nav .nav-items a:hover {
 .belief {
   background-color: #f4f4f1;
   padding: 2vh 8rem;
+  position: relative;
 }
 
 .belief p:first-child {
